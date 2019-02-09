@@ -3,3 +3,12 @@ docker image build -t hello-app .
 docker container run -p 80:8080 -d hello-app
 
 docker container logs -f <container_id>
+
+
+docker login
+
+
+docker image tag <image_id> docker_hub_user/hello-app
+
+
+docker image push docker_hub_user/hello-app
