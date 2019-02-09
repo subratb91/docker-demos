@@ -1,0 +1,5 @@
+docker image build -t hello-app .
+
+docker container run -p 80:8080 -d hello-app
+
+docker container logs -f <container_id>
